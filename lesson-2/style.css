@@ -1,0 +1,40 @@
+div {
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    margin: 20px;
+    width: 80%;
+    height: 300px;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-template-rows: repeat(3, min-content); */
+    grid-template-rows: 20% 60% 20%;
+    grid-gap: 5px;
+    align-content: stretch;
+    grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    background: lightcoral;
+}
+
+.main {
+    grid-area: main;
+    background: lightgreen;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: lightsalmon;
+}
+
+.footer {
+    grid-area: footer;
+    background: lightblue;
+}

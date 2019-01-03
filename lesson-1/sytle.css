@@ -1,0 +1,33 @@
+div {
+    border-radius: 8px;
+    padding: 20px;
+    margin: 2px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+}
+
+.d1 {
+    background: orange;
+    grid-column: 1/3
+}
+.d2 {
+    background: orangered;
+}
+.d3 {
+    background: lightblue;
+    grid-row: 2/4;
+}
+.d4 {
+    background: lightgreen;
+    grid-column: 2/4;
+}
+.d5 {
+    background: lightskyblue
+}
+.d6 {
+    background: plum
+}
